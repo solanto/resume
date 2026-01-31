@@ -1,0 +1,55 @@
+# SPDX-License-Identifier: CC-BY-ND-4.0
+
+- place: Washington Metropolitan Area Transit Authority (Metro)
+  positions:
+    - time:
+        from: 2025
+      title: Associate Project Manager, Strategic Initiatives
+      department: Project Delivery, Infrastructure
+      details:
+        - Creating automation pipelines for internal business logic and data processing for efficient project management in capital programs.
+        # - Providing teams across Project Delivery individualized support to refresh, formalize, and advance their business systems.
+        - Developing analytical models to set standards for internal communication and scheduling protocols, via formal business process modeling and mathematical programming in Julia.
+
+    - time:
+        from: 2024
+        to: 2025
+      title: Associate Project Manager, Design & Configuration Mgmt.
+      department: Project Design Mgmt., Project Delivery, Infrastructure
+      details:
+        - Led overhaul of department business processes and data management strategies, addressing systemic inefficiencies.
+
+    - time:
+        from: 2023
+        to: 2024
+      title: Intern, Design & Configuration Mgmt.
+      department: Project Design Mgmt., Project Delivery, Infrastructure
+      details:
+        - Conducted root cause analysis of systemic inefficiencies in business processes through data analysis and stakeholder interviews.
+        - Researched and prototyped digital information systems for improved business processes.
+
+- place: Shields Uncertainty Research Group
+  positions:
+    - time: 2022
+      title: Open-Source Software Developer
+      department: "[UQpy](https://github.com/SURGroup/UQpy)"
+      details:
+        - Authored and edited scientific computing notebooks in Python combining UQpy, NumPy, and SciPy in examples that demonstrated UQpy's analytical capabilities to prospective users.
+        - Restructured and furthered documentation of the UQpy uncertainty quantification toolkit.
+
+- place: 21st Century Cities Initiative
+  positions:
+    - time: 2021
+      title: Data Analytics Intern
+      department: E-Scooter Group
+      details:
+        - Performed geospatial analyses on e-scooter usage data with millions of high-dimensional data points, exploring transit equity and pandemic impacts on commuter lifestyles across Baltimore City.
+
+- place: Boeing
+  positions:
+    - time: 2018
+      title: Science Communication Intern
+      department: O3b Group, Satellite Development Center
+      details:
+        - Reworked 3D models and documentation for O3b mPOWER, a fleet contracted by SES for equitable telecommunications.
+        - Presented novel spacecraft systems to the customer in English and French at the project's CDR.

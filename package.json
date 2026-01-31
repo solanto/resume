@@ -1,0 +1,39 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ensure-dev-directory": "mkdir -p dev",
+    "generate-data-schemas": "pnpm run ensure-dev-directory && tsx scripts/generate-data-schemas.ts",
+    "dev": "pnpm exec eleventy --serve --config eleventy.config.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "andrew sòlanto",
+  "license": "ISC",
+  "packageManager": "pnpm@10.23.0",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-webc": "0.12.0-beta.7",
+    "@jamshop/eleventy-plugin-typography": "^1.0.0",
+    "@jgarber/eleventy-plugin-postcss": "^3.0.1",
+    "@sardine/eleventy-plugin-tinyhtml": "^0.2.0",
+    "js-yaml": "^4.1.1",
+    "jsdom": "^27.4.0",
+    "libphonenumber-js": "^1.12.33",
+    "postcss-calc": "^10.1.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/jsdom": "latest",
+    "@types/node": "^25.0.3",
+    "@types/postcss-load-config": "^3.0.1",
+    "dotenv": "^17.2.3",
+    "postcss-load-config": "^6.0.1",
+    "ts-json-schema-generator": "^2.4.0",
+    "tsx": "^4.21.0",
+    "zod": "^4.3.5"
+  }
+}

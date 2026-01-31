@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <title @text="typogrify(`${meta.name}’${meta.name.at(-1) == 's' ? '' : 's'} Résumé`)"></title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles.css" webc:keep />
+    <link rel="preconnect" href="https://fonts.googleapis.com" webc:keep>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin webc:keep>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" webc:keep>
+</head>
+
+<body>
+    <section class="meta">
+        <div>
+            <h1 class="initials" @html="eachWord(meta.name)"></h1>
+            <section webc:if="phone || meta.email">
+                <h2 class="visually-hidden">Contact</h2>
+                <address>
+                    <ul class="inline">
+                        <li webc:if="meta.email"><a :href="'mailto:' + meta.email" @text="meta.email"></a></li>
+                        <li webc:if="phone"><a :href="phone.getURI()"
+                                @text="phone.formatInternational().replace(/^\+\d+ /, '')"></a>
+                        </li>
+                    </ul>
+                </address>
+            </section>
+        </div>
+        <div class="secondary">
+            <section>
+                <h2 class="visually-hidden">Location</h2>
+                <address>
+                    <p @text="meta.location"></p>
+                </address>
+            </section>
+            <section>
+                <h2 class="visually-hidden">Websites</h2>
+                <address>
+                    <ul class="inline">
+                        <li webc:for="url of meta.websites"><a :href="url"
+                                @text="url.replace(/^([^.]+?:\/\/)/, '')"></a>
+                        </li>
+                    </ul>
+                </address>
+            </section>
+        </div>
+    </section>
+    <section>
+        <h2 class="initials" @html="eachWord('Experience')"></h2>
+        <section webc:for="e of experience">
+            <section class="position" webc:for="(position, index) of e.positions">
+                <hgroup>
+                    <h3 class="primary" webc:if="index == 0" @html="markdown(e.place)"></h3>
+                    <div class="secondary" webc:if="position.department">
+                        <!--@noformat-->
+                        <h4
+                            @text="position.title"
+                        ></h4><p
+                            class="extra"
+                            @html="markdown(position.department)"
+                        ></p>
+                        <!--@noformat-->
+                    </div>
+                    <h4 webc:else class="secondary" @text="position.title"></h4>
+                    <time-period :time="position.time"></time-period>
+                </hgroup>
+                <ul>
+                    <li webc:for="detail of position.details" @html="markdown(detail)"></li>
+                </ul>
+                <br>
+            </section>
+        </section>
+    </section>
+    <section>
+        <h2 class="initials" @html="eachWord('Technical skills')"></h2>
+        <ul>
+            <li webc:for="skill of technicalSkills">
+                <!--@noformat-->
+                <strong
+                    @html="trim(markdown(skill.headline))"
+                ></strong><x
+                    @text="skill.details[0] == ' ' ? ' ' : ''" @webc:nokeep
+                ></x><x
+                    @html="markdown(skill.details)" webc:nokeep
+                ></x>
+                <!--@noformat-->
+            </li>
+        </ul>
+    </section>
+    <section class="education">
+        <h2 class="initials" @html="eachWord('Education')"></h2>
+        <section class="position" webc:for="e of education">
+            <hgroup>
+                <div webc:if="e.certification.title">
+                    <h3 class="primary" @html="markdown(e.certification.title)"></h3>
+                    <p class="extra">
+                        +
+                        <x @html="markdown(e.certification.extra)" webc:nokeep></x>
+                    </p>
+                </div>
+                <h3 class="primary" webc:else @text="e.certification"></h3>
+                <time-period :time="e.time"></time-period>
+                <h4 class="secondary" @html="markdown(e.place)"></h4>
+            </hgroup>
+            <ul>
+                <li webc:for="detail of e.details">
+                    <x webc:if="detail.title" webc:nokeep>
+                        <strong @html="trim(markdown(detail.title))"></strong>:
+                        <x @html="markdown(detail.content)" webc:nokeep></x>
+                    </x>
+                    <x webc:else @html="markdown(detail)" webc:nokeep></x>
+                </li>
+            </ul>
+            <br>
+        </section>
+    </section>
+    <section>
+        <h2 class="initials" @html="eachWord('Personal')"></h2>
+        <p @html="markdown(meta.personal)"></p>
+    </section>
+</body>
+
+</html>

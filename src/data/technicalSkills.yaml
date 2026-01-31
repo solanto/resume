@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: CC-BY-ND-4.0
+
+- headline: Application + systems programming
+  details: " in R, JavaScript + Node.js, Elm, C++, and Java."
+
+- headline: Machine learning theory + model evaluation
+  details: " for NLP, computer vision, and classification tasks."
+
+- headline: Mathematical programming + numerical methods
+  details: " implemented in Julia + JuMP and Python."
+
+# - headline: GIS + spatial database management
+#   details: " in ArcGIS Suite, linking and querying tables in Python and SQL."
+
+- headline: GIS + satellite imagery processing
+  details: ", combining relational and GeoTIFF data with ArcGIS Suite, ERDAS Imagine, and Shiny."
+
+- headline: Git + GitOps workflows
+  details: " through GitHub Actions, web PaaS providers, and Kubernetes + Flux CD."
+
+- headline: Complex data conditioning
+  details: " from raw YAML and JSON to UI in full-stack development environments."
+
+- headline: Automated software testing
+  details: " with Pytest and JUnit."
+
+- headline: Technical communication
+  details: ": expertly digesting documentation and writing clear, explicit reports."

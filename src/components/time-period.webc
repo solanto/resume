@@ -1,0 +1,11 @@
+<p class="time" webc:if="time.to">
+    <time :datetime="time.from" @text="time.from"></time>
+    <span class="delimiter">–</span>
+    <time :datetime="time.to" @text="time.to"></time>
+</p>
+<p class="time" webc:elseif="time.from">
+    <time :datetime="time.from" @text="time.from"></time> <span class="onward">onward</span>
+</p>
+<p class="time" webc:else>
+    <time :datetime="time" @text="time"></time>
+</p>
