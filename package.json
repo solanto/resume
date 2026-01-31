@@ -24,7 +24,8 @@
     "js-yaml": "^4.1.1",
     "jsdom": "^27.4.0",
     "libphonenumber-js": "^1.12.33",
-    "postcss-calc": "^10.1.1"
+    "postcss-calc": "^10.1.1",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
@@ -34,7 +35,6 @@
     "dotenv": "^17.2.3",
     "postcss-load-config": "^6.0.1",
     "ts-json-schema-generator": "^2.4.0",
-    "tsx": "^4.21.0",
-    "zod": "^4.3.5"
+    "tsx": "^4.21.0"
   }
 }
