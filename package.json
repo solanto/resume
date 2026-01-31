@@ -7,6 +7,7 @@
     "ensure-dev-directory": "mkdir -p dev",
     "generate-data-schemas": "pnpm run ensure-dev-directory && tsx scripts/generate-data-schemas.ts",
     "dev": "pnpm exec eleventy --serve --config eleventy.config.ts",
+    "build": "pnpm exec eleventy --config eleventy.config.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
