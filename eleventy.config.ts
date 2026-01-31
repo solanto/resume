@@ -11,12 +11,7 @@ import type { defaultConfig } from "./node_modules/@11ty/eleventy/src/defaultCon
 import { JSDOM } from "jsdom"
 
 try { await import("dotenv/config") }
-catch (error) {
-    if (
-        (error as any).code != "MODULE_NOT_FOUND" ||
-        (error as any).code != "ERR_MODULE_NOT_FOUND"
-    ) throw error
-}
+catch { }
 
 export default async function (config: UserConfig): Promise<Partial<defaultConfig>> {
     config.addExtension("11ty.ts", { key: "11ty.js" })
