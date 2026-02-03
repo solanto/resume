@@ -46,48 +46,6 @@
             </section>
         </div>
     </section>
-    <section>
-        <h2 class="initials" @html="eachWord('Experience')"></h2>
-        <section webc:for="e of experience">
-            <section class="position" webc:for="(position, index) of e.positions">
-                <hgroup>
-                    <h3 class="primary" webc:if="index == 0" @html="markdown(e.place)"></h3>
-                    <div class="secondary" webc:if="position.department">
-                        <!--@noformat-->
-                        <h4
-                            @text="position.title"
-                        ></h4><p
-                            class="extra"
-                            @html="markdown(position.department)"
-                        ></p>
-                        <!--@noformat-->
-                    </div>
-                    <h4 webc:else class="secondary" @text="position.title"></h4>
-                    <time-period :time="position.time"></time-period>
-                </hgroup>
-                <ul>
-                    <li webc:for="detail of position.details" @html="markdown(detail)"></li>
-                </ul>
-                <br>
-            </section>
-        </section>
-    </section>
-    <section>
-        <h2 class="initials" @html="eachWord('Technical skills')"></h2>
-        <ul>
-            <li webc:for="skill of technicalSkills">
-                <!--@noformat-->
-                <strong
-                    @html="trim(markdown(skill.headline))"
-                ></strong><x
-                    @text="skill.details[0] == ' ' ? ' ' : ''" @webc:nokeep
-                ></x><x
-                    @html="markdown(skill.details)" webc:nokeep
-                ></x>
-                <!--@noformat-->
-            </li>
-        </ul>
-    </section>
     <section class="education">
         <h2 class="initials" @html="eachWord('Education')"></h2>
         <section class="position" webc:for="e of education">
@@ -113,6 +71,48 @@
                 </li>
             </ul>
             <br>
+        </section>
+    </section>
+    <section>
+        <h2 class="initials" @html="eachWord('Technical skills')"></h2>
+        <ul>
+            <li webc:for="skill of technicalSkills">
+                <!--@noformat-->
+                    <strong
+                        @html="trim(markdown(skill.headline))"
+                    ></strong><x
+                        @text="skill.details[0] == ' ' ? ' ' : ''" @webc:nokeep
+                    ></x><x
+                        @html="markdown(skill.details)" webc:nokeep
+                    ></x>
+                    <!--@noformat-->
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="initials" @html="eachWord('Experience')"></h2>
+        <section webc:for="e of experience">
+            <section class="position" webc:for="(position, index) of e.positions">
+                <hgroup>
+                    <h3 class="primary" webc:if="index == 0" @html="markdown(e.place)"></h3>
+                    <div class="secondary" webc:if="position.department">
+                        <!--@noformat-->
+                        <h4
+                            @text="position.title"
+                        ></h4><p
+                            class="extra"
+                            @html="markdown(position.department)"
+                        ></p>
+                        <!--@noformat-->
+                    </div>
+                    <h4 webc:else class="secondary" @text="position.title"></h4>
+                    <time-period :time="position.time"></time-period>
+                </hgroup>
+                <ul>
+                    <li webc:for="detail of position.details" @html="markdown(detail)"></li>
+                </ul>
+                <br>
+            </section>
         </section>
     </section>
     <section>

@@ -11,5 +11,5 @@ export default Meta.parse({
     "https://linkedin.com/in/andrewsolanto",
     "https://github.com/solanto"
   ],
-  personal: "I've been spending my free time watching independent cybersecurity research talks recorded from the [Chaos Communication Congress](https://media.ccc.de/c/39c3) and [DEF CON](https://www.youtube.com/user/DEFCONConference). And, as a fun fact, this résumé was generated from data specified in YAML ([source on GitHub](https://github.com/solanto/resume))."
+  personal: "I competed in the Air Force Association's CyberPatriot cybersecurity and networking competiton for five years. I've been spending my free time watching independent cybersecurity research talks recorded from the [Chaos Communication Congress](https://media.ccc.de/c/39c3) and [DEF CON](https://www.youtube.com/user/DEFCONConference). And, as a fun fact, this résumé was generated from data specified in YAML ([source on GitHub](https://github.com/solanto/resume))."
 })
