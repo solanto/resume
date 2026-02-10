@@ -4,6 +4,6 @@
         "./dev/education.schema.json": "/src/data/education.yaml",
         "./dev/experience.schema.json": "/src/data/experience.yaml",
         "./dev/meta.schema.json": "/src/data/meta.yaml",
-        "./dev/technicalskills.schema.json": "/src/data/technicalskills.yaml",
+        "./dev/technicalskills.schema.json": "/src/data/technicalSkills.yaml",
     }
 }
