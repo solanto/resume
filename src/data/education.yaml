@@ -1,31 +1,32 @@
 # SPDX-License-Identifier: CC-BY-ND-4.0
 
 - place: Johns Hopkins University
-  time:
-    from: 2020
-    to: 2024
+  # time:
+  #   from: 2020
+  #   to: 2024
   certification:
     title: B.S. in systems engineering
     extra: minors in civil engineering and environmental studies
   details:
-    - Studied sustainable, equitable physical and social infrastructure through data and modeling.
-    - title: Honors
-      content: ASCE Maryland Scholarship, A. James Clark Scholarship (4-year business program).
+    # - Studied sustainable, equitable physical and social infrastructure through data and modeling.
+    - Learned to design complex systems at the intersection of computer science, applied mathematics, and classical engineering.
+    # - title: Honors
+    #   content: ASCE Maryland Scholarship, A. James Clark Scholarship (4-year business program).
     - title: Master's-level coursework
-      content: convex optimization, data science, ML theory & application, operations research, network modeling, catastrophe modeling, GIS, and climate science.
-    - title: Bachelor's-level coursework
-      content: NLP, human-centered civic technology, and environmental politics.
+      content: logic & proofs, convex optimization, data science, ML theory & application, operations research, network modeling, catastrophe modeling, GIS, and climate science.
+    # - title: Bachelor's-level coursework
+    #   content: data structures, NLP, human-centered civic technology, and environmental politics.
 
-- place: freeCodeCamp
-  time: 2020
-  certification: Developer certification in JavaScript algorithms and data structures
-  details:
-    - Represents 300 hours of coursework in managing, manipulating, and analyzing data.
+# - place: freeCodeCamp
+#   time: 2020
+#   certification: Developer certification in JavaScript algorithms and data structures
+#   details:
+#     - Represents 300 hours of coursework in managing, manipulating, and analyzing data.
 
 - place: El Camino College
-  time:
-    from: 2016
-    to: 2020
+  # time:
+  #   from: 2016
+  #   to: 2020
   certification: Certificate of achievement in mechanical engineering design technology
   details:
     - Received High Honors distinction for coursework in design theory, technical drafting, digital design tools, and fabrication techniques.

@@ -256,9 +256,14 @@ strong {
     margin-block-start: 0;
 }
 
+/* .summary {
+    margin-block-start: 5pt;
+    margin-block-end: 5pt;
+} */
+
 @media print {
     @page {
-        margin: 0.49in;
+        margin: 0.5in;
     }
 
     :root {

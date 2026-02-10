@@ -11,5 +11,8 @@ export default Meta.parse({
     "https://linkedin.com/in/andrewsolanto",
     "https://github.com/solanto"
   ],
-  personal: "I've been spending my free time watching independent cybersecurity research talks recorded from the [Chaos Communication Congress](https://media.ccc.de/c/39c3) and [DEF CON](https://www.youtube.com/user/DEFCONConference). And, as a fun fact, this résumé was generated from data specified in YAML ([source on GitHub](https://github.com/solanto/resume))."
+
+  personal: undefined,
+
+  summary: "I'm an accessibility and UX–oriented software engineer with 6+ years combined academic, open-source, and professional software development experiences. My methods are informed by extensive research and open standards, and I'm trained to combine computing with human-centered design. In my free time, I've been designing, building, and writing for a technical blog covering my personal research interests in scientific computing and Linux systems admin—on the web at [dandelion.computer](https://dandelion.computer). And, as a fun fact, this résumé was generated with custom WebC components and data specified in YAML ([source on GitHub](https://github.com/solanto/resume))."
 })

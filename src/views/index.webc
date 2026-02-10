@@ -46,6 +46,10 @@
             </section>
         </div>
     </section>
+    <section webc:if="meta.summary" class="summary">
+        <h2 class="initials" @html="eachWord('Summary')"></h2>
+        <p @html="markdown(meta.summary)"></p>
+    </section>
     <section>
         <h2 class="initials" @html="eachWord('Experience')"></h2>
         <section webc:for="e of experience">
@@ -100,7 +104,7 @@
                     </p>
                 </div>
                 <h3 class="primary" webc:else @text="e.certification"></h3>
-                <time-period :time="e.time"></time-period>
+                <time-period webc:if="e.time" :time="e.time"></time-period>
                 <h4 class="secondary" @html="markdown(e.place)"></h4>
             </hgroup>
             <ul>
@@ -115,7 +119,7 @@
             <br>
         </section>
     </section>
-    <section>
+    <section webc:if="meta.personal">
         <h2 class="initials" @html="eachWord('Personal')"></h2>
         <p @html="markdown(meta.personal)"></p>
     </section>

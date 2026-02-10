@@ -11,7 +11,7 @@ export const Time = z.union([
 export const Education = z.array(
     z.object({
         place: z.string(),
-        time: Time,
+        time: Time.optional(),
         certification: z.union([
             z.string(),
             z.object({
@@ -51,7 +51,8 @@ export const Meta = z.object({
     phone: z.string().optional(),
     location: z.string(),
     websites: z.array(z.url()),
-    personal: z.string()
+    personal: z.string().optional(),
+    summary: z.string().optional()
 })
 
 export const TechnicalSkills = z.array(
