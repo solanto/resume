@@ -5,20 +5,20 @@
     - time:
         from: 2025
         to: 2026
-      title: Associate Project Manager, Strategic Initiatives
-      department: Project Delivery, Infrastructure
+      title: Associate Project Manager
+      department: Project Delivery Strategic Initiatives
       details:
-        - Creating backend automation pipelines for Metro's business logic and data management.
-        - Iteratively designing and implementing project manager–facing, frontend UI and data visualizations.
+        - Created backend automation pipelines for Metro's business logic and data management.
+        - Iteratively designed and implemented project manager–facing, frontend UI and data visualizations.
         # - Providing teams across Project Delivery individualized support to refresh, formalize, and advance their business systems.
-        - Developing analytical models to set standards for internal communication and scheduling protocols, via formal business process modeling and mathematical programming in Julia.
-        - Collaborating with project managers to understand user needs and gather formal requirements for digital systems.
+        - Developed analytical models to set standards for internal communication and scheduling protocols, via formal business process modeling and mathematical programming in Julia.
+        - Collaborated with project managers to understand user needs and gather formal requirements for digital systems.
 
     - time:
         from: 2023
         to: 2025
-      title: Associate Project Manager, Design & Configuration Mgmt.
-      department: Project Design Mgmt., Project Delivery, Infrastructure
+      title: Associate Project Manager
+      department: Design & Configuration Management
       details:
         - Conducted root cause analysis of systemic inefficiencies in business processes through data analysis and stakeholder interviews.
         - Researched and introduced new tooling to specify and document business processes.
@@ -33,19 +33,18 @@
         - Authored and edited scientific computing notebooks in Python combining UQpy, NumPy, and SciPy in examples that demonstrated UQpy's analytical capabilities to prospective users.
         - Restructured and furthered documentation of the UQpy uncertainty quantification toolkit.
 
-- place: 21st Century Cities Initiative
+- place: Johns Hopkins 21st Century Cities Initiative
   positions:
     - time: 2021
       title: Data Analytics Intern
       department: E-Scooter Group
       details:
         - Performed geospatial analyses on e-scooter usage data with millions of high-dimensional, relational data points, exploring transit equity and pandemic impacts on commuter lifestyles across Baltimore City.
-
-- place: Boeing
-  positions:
-    - time: 2018
-      title: Science Communication Intern
-      department: O3b Group, Satellite Development Center
-      details:
-        - Reworked 3D models and documentation for O3b mPOWER, a fleet contracted by SES for equitable telecommunications.
-        - Presented novel spacecraft systems to a semi-technical customer audience in English and French at the project's CDR.
+# - place: Boeing
+#   positions:
+#     - time: 2018
+#       title: Science Communication Intern
+#       department: O3b Group, Satellite Development Center
+#       details:
+#         - Reworked 3D models and documentation for O3b mPOWER, a fleet contracted by SES for equitable telecommunications.
+#         - Presented novel spacecraft systems to a semi-technical customer audience in English and French at the project's CDR.

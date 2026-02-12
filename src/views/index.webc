@@ -50,6 +50,33 @@
         <h2 class="initials" @html="eachWord('Summary')"></h2>
         <p @html="markdown(meta.summary)"></p>
     </section>
+    <section class="education">
+        <h2 class="initials" @html="eachWord('Education')"></h2>
+        <section class="position" webc:for="e of education">
+            <hgroup>
+                <div webc:if="e.certification.title">
+                    <h3 class="primary" @html="markdown(e.certification.title)"></h3>
+                    <p class="extra">
+                        +
+                        <x @html="markdown(e.certification.extra)" webc:nokeep></x>
+                    </p>
+                </div>
+                <h3 class="primary" webc:else @text="e.certification"></h3>
+                <time-period webc:if="e.time" :time="e.time"></time-period>
+                <h4 class="secondary" @html="markdown(e.place)"></h4>
+            </hgroup>
+            <ul>
+                <li webc:for="detail of e.details">
+                    <x webc:if="detail.title" webc:nokeep>
+                        <strong @html="trim(markdown(detail.title))"></strong>:
+                        <x @html="markdown(detail.content)" webc:nokeep></x>
+                    </x>
+                    <x webc:else @html="markdown(detail)" webc:nokeep></x>
+                </li>
+            </ul>
+            <br>
+        </section>
+    </section>
     <section>
         <h2 class="initials" @html="eachWord('Experience')"></h2>
         <section webc:for="e of experience">
@@ -91,33 +118,6 @@
                 <!--@noformat-->
             </li>
         </ul>
-    </section>
-    <section class="education">
-        <h2 class="initials" @html="eachWord('Education')"></h2>
-        <section class="position" webc:for="e of education">
-            <hgroup>
-                <div webc:if="e.certification.title">
-                    <h3 class="primary" @html="markdown(e.certification.title)"></h3>
-                    <p class="extra">
-                        +
-                        <x @html="markdown(e.certification.extra)" webc:nokeep></x>
-                    </p>
-                </div>
-                <h3 class="primary" webc:else @text="e.certification"></h3>
-                <time-period webc:if="e.time" :time="e.time"></time-period>
-                <h4 class="secondary" @html="markdown(e.place)"></h4>
-            </hgroup>
-            <ul>
-                <li webc:for="detail of e.details">
-                    <x webc:if="detail.title" webc:nokeep>
-                        <strong @html="trim(markdown(detail.title))"></strong>:
-                        <x @html="markdown(detail.content)" webc:nokeep></x>
-                    </x>
-                    <x webc:else @html="markdown(detail)" webc:nokeep></x>
-                </li>
-            </ul>
-            <br>
-        </section>
     </section>
     <section webc:if="meta.personal">
         <h2 class="initials" @html="eachWord('Personal')"></h2>
